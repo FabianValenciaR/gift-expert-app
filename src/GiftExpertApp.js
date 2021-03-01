@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory';
 import { GiftGrid } from './components/GiftGrid';
 
-export const GiftExpertApp = () => {
+export const GiftExpertApp = ({ defaultCategories = [] }) => {
     // const categories = ['One Punch', 'Samurai x', 'Dragon Ball'];
-    const [categories, setCategories] = useState(['Dragon Ball']);
+    const [categories, setCategories] = useState(defaultCategories);
 
     // const handleAdd = () =>{
     //     // setCategories([...categories, 'Hunter']);
